@@ -1,17 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CategoriesTriggerComponent } from './categories/categories-trigger.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
-  `,
-  styles: [],
+  imports: [CategoriesTriggerComponent],
+  template: ` <app-categories-trigger /> `,
 })
-export class AppComponent {
-  title = 'spartan-dropdown-bug';
-}
+export class AppComponent {}
